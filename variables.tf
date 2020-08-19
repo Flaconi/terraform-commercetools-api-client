@@ -55,8 +55,8 @@ variable "commercetools_client_scopes_ssm_path" {
 }
 
 variable "api_client" {
-  type        = object({
-    name = string
+  type = object({
+    name  = string
     scope = list(string)
   })
 
