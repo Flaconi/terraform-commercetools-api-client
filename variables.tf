@@ -56,8 +56,9 @@ variable "commercetools_client_scopes_ssm_path" {
 
 variable "api_client" {
   type = object({
-    name  = string
-    scope = list(string)
+    name      = string
+    scope     = list(string)
+    protected = bool
   })
 
   description = "name and scope of api client"

@@ -1,6 +1,8 @@
 output "api_client" {
   description = "created api client through terraform"
-
-  value     = commercetools_api_client.api_client
+  value = coalescelist(
+    commercetools_api_client.protected,
+    commercetools_api_client.unprotected,
+  )
   sensitive = true
 }
