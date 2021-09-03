@@ -10,8 +10,6 @@ on: [pull_request]
 jobs:
   docs:
     runs-on: ubuntu-latest
-
-    name: "[ ${{ matrix.job }} ]"
     steps:
       - name: Checkout repository
         uses: actions/checkout@master
