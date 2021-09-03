@@ -61,5 +61,5 @@ variable "api_client" {
     protected = bool
   })
 
-  description = "name and scope of api client"
+  description = "Name and scope of api client"
 }
