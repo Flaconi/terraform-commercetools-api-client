@@ -8,14 +8,14 @@ This module will create commercetools client credentials and save them in SSM st
 | Name | Version |
 |------|---------|
 | terraform | >= 0.13 |
-| commercetools | = 0.30.0 |
+| commercetools | >= 0.30 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
 | aws | n/a |
-| commercetools | = 0.30.0 |
+| commercetools | >= 0.30 |
 
 ## Inputs
 
