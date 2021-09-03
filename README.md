@@ -21,7 +21,7 @@ This module will create commercetools client credentials and save them in SSM st
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| api\_client | name and scope of api client | <pre>object({<br>    name      = string<br>    scope     = list(string)<br>    protected = bool<br>  })</pre> | n/a | yes |
+| api\_client | Name and scope of api client | <pre>object({<br>    name      = string<br>    scope     = list(string)<br>    protected = bool<br>  })</pre> | n/a | yes |
 | commercetools\_client\_api\_url | n/a | `string` | `""` | no |
 | commercetools\_client\_api\_url\_ssm\_path | n/a | `string` | `""` | no |
 | commercetools\_client\_id | n/a | `string` | `""` | no |
