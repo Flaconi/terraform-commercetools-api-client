@@ -51,7 +51,7 @@ No modules.
 | <a name="input_commercetools_client_secret_ssm_path"></a> [commercetools\_client\_secret\_ssm\_path](#input\_commercetools\_client\_secret\_ssm\_path) | n/a | `string` | `""` | no |
 | <a name="input_commercetools_client_token_url"></a> [commercetools\_client\_token\_url](#input\_commercetools\_client\_token\_url) | n/a | `string` | `""` | no |
 | <a name="input_commercetools_client_token_url_ssm_path"></a> [commercetools\_client\_token\_url\_ssm\_path](#input\_commercetools\_client\_token\_url\_ssm\_path) | n/a | `string` | `""` | no |
-| <a name="input_create"></a> [create](#input\_create) | Whether to create the api client  | `bool` | `true` | no |
+| <a name="input_create"></a> [create](#input\_create) | Whether to create the api client | `bool` | `true` | no |
 
 ## Outputs
 
