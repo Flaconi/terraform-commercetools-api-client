@@ -1,5 +1,5 @@
 resource "commercetools_api_client" "api_client" {
-  count = var.api_client.protected ? 0 : 1
+  count = var.api_client.protected || !var.create ? 0 : 1
   name  = var.api_client.name
   scope = var.api_client.scope
 

@@ -3,6 +3,7 @@ output "api_client" {
   value = element(coalescelist(
     commercetools_api_client.protected,
     commercetools_api_client.api_client,
+    [""]
   ), 0)
   sensitive = true
 }

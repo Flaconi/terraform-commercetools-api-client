@@ -63,3 +63,8 @@ variable "api_client" {
 
   description = "Name and scope of api client"
 }
+variable "create" {
+  description = "Whether to create the api client"
+  type        = bool
+  default     = true
+}
