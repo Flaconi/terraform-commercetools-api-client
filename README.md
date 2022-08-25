@@ -8,14 +8,14 @@ This module will create commercetools client credentials and save them in SSM st
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.13 |
-| <a name="requirement_commercetools"></a> [commercetools](#requirement\_commercetools) | >= 0.30 |
+| <a name="requirement_commercetools"></a> [commercetools](#requirement\_commercetools) | >= 1.4.2 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
 | <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
-| <a name="provider_commercetools"></a> [commercetools](#provider\_commercetools) | >= 0.30 |
+| <a name="provider_commercetools"></a> [commercetools](#provider\_commercetools) | >= 1.4.2 |
 
 ## Modules
 
