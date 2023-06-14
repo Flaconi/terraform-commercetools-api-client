@@ -7,3 +7,9 @@ output "api_client" {
   ), 0)
   sensitive = true
 }
+
+output "api_clients" {
+  description = "created api clients through terraform"
+  value       = commercetools_api_client.api_clients
+  sensitive   = true
+}
