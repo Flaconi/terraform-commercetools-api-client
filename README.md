@@ -26,6 +26,7 @@ No modules.
 | Name | Type |
 |------|------|
 | [commercetools_api_client.api_client](https://registry.terraform.io/providers/labd/commercetools/latest/docs/resources/api_client) | resource |
+| [commercetools_api_client.api_clients](https://registry.terraform.io/providers/labd/commercetools/latest/docs/resources/api_client) | resource |
 | [commercetools_api_client.protected](https://registry.terraform.io/providers/labd/commercetools/latest/docs/resources/api_client) | resource |
 | [aws_ssm_parameter.commercetools_client_api_url](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/ssm_parameter) | data source |
 | [aws_ssm_parameter.commercetools_client_id](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/ssm_parameter) | data source |
@@ -38,7 +39,8 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_api_client"></a> [api\_client](#input\_api\_client) | Name and scope of api client | <pre>object({<br>    name      = string<br>    scope     = list(string)<br>    protected = bool<br>  })</pre> | n/a | yes |
+| <a name="input_api_client"></a> [api\_client](#input\_api\_client) | Name and scope of the single api client | <pre>object({<br>    name      = string<br>    scope     = list(string)<br>    protected = bool<br>  })</pre> | `null` | no |
+| <a name="input_api_clients"></a> [api\_clients](#input\_api\_clients) | map of api\_clients | <pre>map(object({<br>    name  = string,<br>    scope = list(string)<br>  }))</pre> | `{}` | no |
 | <a name="input_commercetools_client_api_url"></a> [commercetools\_client\_api\_url](#input\_commercetools\_client\_api\_url) | n/a | `string` | `""` | no |
 | <a name="input_commercetools_client_api_url_ssm_path"></a> [commercetools\_client\_api\_url\_ssm\_path](#input\_commercetools\_client\_api\_url\_ssm\_path) | n/a | `string` | `""` | no |
 | <a name="input_commercetools_client_id"></a> [commercetools\_client\_id](#input\_commercetools\_client\_id) | n/a | `string` | `""` | no |
@@ -51,12 +53,13 @@ No modules.
 | <a name="input_commercetools_client_secret_ssm_path"></a> [commercetools\_client\_secret\_ssm\_path](#input\_commercetools\_client\_secret\_ssm\_path) | n/a | `string` | `""` | no |
 | <a name="input_commercetools_client_token_url"></a> [commercetools\_client\_token\_url](#input\_commercetools\_client\_token\_url) | n/a | `string` | `""` | no |
 | <a name="input_commercetools_client_token_url_ssm_path"></a> [commercetools\_client\_token\_url\_ssm\_path](#input\_commercetools\_client\_token\_url\_ssm\_path) | n/a | `string` | `""` | no |
-| <a name="input_create"></a> [create](#input\_create) | Whether to create the api client | `bool` | `true` | no |
+| <a name="input_create"></a> [create](#input\_create) | Whether to create the single api client | `bool` | `true` | no |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
 | <a name="output_api_client"></a> [api\_client](#output\_api\_client) | created api client through terraform |
+| <a name="output_api_clients"></a> [api\_clients](#output\_api\_clients) | created api clients through terraform |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
