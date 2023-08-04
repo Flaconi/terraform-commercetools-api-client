@@ -4,6 +4,11 @@ terraform {
       source  = "labd/commercetools"
       version = ">= 1.4.2"
     }
+
+    aws = {
+      source  = "hashicorp/aws"
+      version = ">= 4.53"
+    }
   }
-  required_version = ">= 0.13"
+  required_version = ">= 1.1"
 }
