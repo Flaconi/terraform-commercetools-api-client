@@ -183,6 +183,7 @@ Default: `{}`
 
 | Name | Description |
 |------|-------------|
+| <a name="output_api_client"></a> [api\_client](#output\_api\_client) | created api client through terraform |
 | <a name="output_api_clients"></a> [api\_clients](#output\_api\_clients) | created api clients through terraform |
 
 <!-- TFDOCS_OUTPUTS_END -->
