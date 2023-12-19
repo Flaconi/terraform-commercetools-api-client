@@ -7,8 +7,4 @@ resource "commercetools_api_client" "this" {
   for_each = var.api_clients
   name     = each.value.name
   scope    = each.value.scope
-
-  lifecycle {
-    prevent_destroy = false
-  }
 }
