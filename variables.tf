@@ -70,16 +70,6 @@ variable "token_url_ssm_path" {
   description = "SSM-path to Commercetools AUTH URL used to create a new client"
 }
 
-variable "api_client" {
-  type = object({
-    name      = string
-    scope     = list(string)
-    protected = bool
-  })
-  default     = null
-  description = "Name and scope of the single api client"
-}
-
 variable "api_clients" {
   type = map(object({
     name  = string,

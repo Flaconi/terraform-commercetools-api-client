@@ -137,30 +137,6 @@ Type: `string`
 
 Default: `""`
 
-### <a name="input_api_client"></a> [api\_client](#input\_api\_client)
-
-Description: Name and scope of the single api client
-
-Type:
-
-```hcl
-object({
-    name      = string
-    scope     = list(string)
-    protected = bool
-  })
-```
-
-Default: `null`
-
-### <a name="input_create"></a> [create](#input\_create)
-
-Description: Whether to create the single api client
-
-Type: `bool`
-
-Default: `true`
-
 ### <a name="input_api_clients"></a> [api\_clients](#input\_api\_clients)
 
 Description: Map of API clients
@@ -183,8 +159,7 @@ Default: `{}`
 
 | Name | Description |
 |------|-------------|
-| <a name="output_api_client"></a> [api\_client](#output\_api\_client) | created api client through terraform |
-| <a name="output_api_clients"></a> [api\_clients](#output\_api\_clients) | created api clients through terraform |
+| <a name="output_api_clients"></a> [api\_clients](#output\_api\_clients) | Created API clients through terraform |
 
 <!-- TFDOCS_OUTPUTS_END -->
 
