@@ -1,57 +1,73 @@
-variable "commercetools_client_id" {
-  type    = string
-  default = ""
+variable "client_id" {
+  type        = string
+  default     = ""
+  description = "Commercetools API client id used to create a new client"
 }
 
-variable "commercetools_client_secret" {
-  type    = string
-  default = ""
-}
-variable "commercetools_client_project_key" {
-  type    = string
-  default = ""
+variable "client_secret" {
+  type        = string
+  default     = ""
+  description = "Commercetools API client secret used to create a new client"
 }
 
-variable "commercetools_client_api_url" {
-  type    = string
-  default = ""
+variable "client_scopes" {
+  type        = string
+  default     = ""
+  description = "Commercetools API client scopes used to create a new client"
 }
 
-variable "commercetools_client_token_url" {
-  type    = string
-  default = ""
-}
-variable "commercetools_client_scopes" {
-  type    = string
-  default = ""
+variable "project_key" {
+  type        = string
+  default     = ""
+  description = "Commercetools project key used to create a new client"
 }
 
-variable "commercetools_client_id_ssm_path" {
-  type    = string
-  default = ""
+variable "api_url" {
+  type        = string
+  default     = ""
+  description = "Commercetools API URL used to create a new client"
 }
 
-variable "commercetools_client_secret_ssm_path" {
-  type    = string
-  default = ""
-}
-variable "commercetools_client_project_key_ssm_path" {
-  type    = string
-  default = ""
+variable "token_url" {
+  type        = string
+  default     = ""
+  description = "Commercetools AUTH URL used to create a new client"
 }
 
-variable "commercetools_client_api_url_ssm_path" {
-  type    = string
-  default = ""
+variable "client_id_ssm_path" {
+  type        = string
+  default     = ""
+  description = "SSM-path to Commercetools API client id used to create a new client"
 }
 
-variable "commercetools_client_token_url_ssm_path" {
-  type    = string
-  default = ""
+variable "client_secret_ssm_path" {
+  type        = string
+  default     = ""
+  description = "SSM-path to Commercetools API client secret used to create a new client"
 }
-variable "commercetools_client_scopes_ssm_path" {
-  type    = string
-  default = ""
+
+variable "client_scopes_ssm_path" {
+  type        = string
+  default     = ""
+  description = "SSM-path to Commercetools API client scopes used to create a new client"
+}
+
+variable "project_key_ssm_path" {
+  type        = string
+  default     = ""
+  description = "SSM-path to Commercetools project key used to create a new client"
+}
+
+variable "api_url_ssm_path" {
+  type        = string
+  default     = ""
+  description = "SSM-path to Commercetools API URL used to create a new client"
+}
+
+variable "token_url_ssm_path" {
+  type        = string
+  default     = ""
+  description = "SSM-path to Commercetools AUTH URL used to create a new client"
 }
 
 variable "api_client" {
@@ -60,11 +76,10 @@ variable "api_client" {
     scope     = list(string)
     protected = bool
   })
-
-  default = null
-
+  default     = null
   description = "Name and scope of the single api client"
 }
+
 variable "create" {
   description = "Whether to create the single api client"
   type        = bool
@@ -76,7 +91,6 @@ variable "api_clients" {
     name  = string,
     scope = list(string)
   }))
-  description = "map of api_clients"
-
-  default = {}
+  description = "Map of API clients"
+  default     = {}
 }
