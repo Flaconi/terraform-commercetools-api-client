@@ -80,17 +80,11 @@ variable "api_client" {
   description = "Name and scope of the single api client"
 }
 
-variable "create" {
-  description = "Whether to create the single api client"
-  type        = bool
-  default     = true
-}
-
 variable "api_clients" {
   type = map(object({
     name  = string,
     scope = list(string)
   }))
-  description = "Map of API clients"
   default     = {}
+  description = "Map of API clients"
 }
