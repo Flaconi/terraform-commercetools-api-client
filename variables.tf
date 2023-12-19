@@ -73,7 +73,7 @@ variable "token_url_ssm_path" {
 variable "api_clients" {
   type = map(object({
     name  = string,
-    scope = list(string)
+    scope = set(string)
   }))
   default     = {}
   description = "Map of API clients"
