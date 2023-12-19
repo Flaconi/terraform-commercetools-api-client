@@ -16,8 +16,8 @@ This module will create commercetools client credentials and save them in SSM st
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 4.53 |
-| <a name="provider_commercetools"></a> [commercetools](#provider\_commercetools) | >= 1.4.2 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 5.31 |
+| <a name="provider_commercetools"></a> [commercetools](#provider\_commercetools) | >= 1.13.0 |
 
 <!-- TFDOCS_PROVIDER_END -->
 
@@ -27,8 +27,8 @@ This module will create commercetools client credentials and save them in SSM st
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.1 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 4.53 |
-| <a name="requirement_commercetools"></a> [commercetools](#requirement\_commercetools) | >= 1.4.2 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 5.31 |
+| <a name="requirement_commercetools"></a> [commercetools](#requirement\_commercetools) | >= 1.13.0 |
 
 <!-- TFDOCS_REQUIREMENTS_END -->
 
@@ -41,97 +41,97 @@ No required inputs.
 
 The following input variables are optional (have default values):
 
-### <a name="input_commercetools_client_id"></a> [commercetools\_client\_id](#input\_commercetools\_client\_id)
+### <a name="input_client_id"></a> [client\_id](#input\_client\_id)
 
-Description: n/a
-
-Type: `string`
-
-Default: `""`
-
-### <a name="input_commercetools_client_secret"></a> [commercetools\_client\_secret](#input\_commercetools\_client\_secret)
-
-Description: n/a
+Description: Commercetools API client id used to create a new client
 
 Type: `string`
 
 Default: `""`
 
-### <a name="input_commercetools_client_project_key"></a> [commercetools\_client\_project\_key](#input\_commercetools\_client\_project\_key)
+### <a name="input_client_secret"></a> [client\_secret](#input\_client\_secret)
 
-Description: n/a
-
-Type: `string`
-
-Default: `""`
-
-### <a name="input_commercetools_client_api_url"></a> [commercetools\_client\_api\_url](#input\_commercetools\_client\_api\_url)
-
-Description: n/a
+Description: Commercetools API client secret used to create a new client
 
 Type: `string`
 
 Default: `""`
 
-### <a name="input_commercetools_client_token_url"></a> [commercetools\_client\_token\_url](#input\_commercetools\_client\_token\_url)
+### <a name="input_client_scopes"></a> [client\_scopes](#input\_client\_scopes)
 
-Description: n/a
-
-Type: `string`
-
-Default: `""`
-
-### <a name="input_commercetools_client_scopes"></a> [commercetools\_client\_scopes](#input\_commercetools\_client\_scopes)
-
-Description: n/a
+Description: Commercetools API client scopes used to create a new client
 
 Type: `string`
 
 Default: `""`
 
-### <a name="input_commercetools_client_id_ssm_path"></a> [commercetools\_client\_id\_ssm\_path](#input\_commercetools\_client\_id\_ssm\_path)
+### <a name="input_project_key"></a> [project\_key](#input\_project\_key)
 
-Description: n/a
-
-Type: `string`
-
-Default: `""`
-
-### <a name="input_commercetools_client_secret_ssm_path"></a> [commercetools\_client\_secret\_ssm\_path](#input\_commercetools\_client\_secret\_ssm\_path)
-
-Description: n/a
+Description: Commercetools project key used to create a new client
 
 Type: `string`
 
 Default: `""`
 
-### <a name="input_commercetools_client_project_key_ssm_path"></a> [commercetools\_client\_project\_key\_ssm\_path](#input\_commercetools\_client\_project\_key\_ssm\_path)
+### <a name="input_api_url"></a> [api\_url](#input\_api\_url)
 
-Description: n/a
-
-Type: `string`
-
-Default: `""`
-
-### <a name="input_commercetools_client_api_url_ssm_path"></a> [commercetools\_client\_api\_url\_ssm\_path](#input\_commercetools\_client\_api\_url\_ssm\_path)
-
-Description: n/a
+Description: Commercetools API URL used to create a new client
 
 Type: `string`
 
 Default: `""`
 
-### <a name="input_commercetools_client_token_url_ssm_path"></a> [commercetools\_client\_token\_url\_ssm\_path](#input\_commercetools\_client\_token\_url\_ssm\_path)
+### <a name="input_token_url"></a> [token\_url](#input\_token\_url)
 
-Description: n/a
+Description: Commercetools AUTH URL used to create a new client
 
 Type: `string`
 
 Default: `""`
 
-### <a name="input_commercetools_client_scopes_ssm_path"></a> [commercetools\_client\_scopes\_ssm\_path](#input\_commercetools\_client\_scopes\_ssm\_path)
+### <a name="input_client_id_ssm_path"></a> [client\_id\_ssm\_path](#input\_client\_id\_ssm\_path)
 
-Description: n/a
+Description: SSM-path to Commercetools API client id used to create a new client
+
+Type: `string`
+
+Default: `""`
+
+### <a name="input_client_secret_ssm_path"></a> [client\_secret\_ssm\_path](#input\_client\_secret\_ssm\_path)
+
+Description: SSM-path to Commercetools API client secret used to create a new client
+
+Type: `string`
+
+Default: `""`
+
+### <a name="input_client_scopes_ssm_path"></a> [client\_scopes\_ssm\_path](#input\_client\_scopes\_ssm\_path)
+
+Description: SSM-path to Commercetools API client scopes used to create a new client
+
+Type: `string`
+
+Default: `""`
+
+### <a name="input_project_key_ssm_path"></a> [project\_key\_ssm\_path](#input\_project\_key\_ssm\_path)
+
+Description: SSM-path to Commercetools project key used to create a new client
+
+Type: `string`
+
+Default: `""`
+
+### <a name="input_api_url_ssm_path"></a> [api\_url\_ssm\_path](#input\_api\_url\_ssm\_path)
+
+Description: SSM-path to Commercetools API URL used to create a new client
+
+Type: `string`
+
+Default: `""`
+
+### <a name="input_token_url_ssm_path"></a> [token\_url\_ssm\_path](#input\_token\_url\_ssm\_path)
+
+Description: SSM-path to Commercetools AUTH URL used to create a new client
 
 Type: `string`
 
@@ -163,7 +163,7 @@ Default: `true`
 
 ### <a name="input_api_clients"></a> [api\_clients](#input\_api\_clients)
 
-Description: map of api\_clients
+Description: Map of API clients
 
 Type:
 
