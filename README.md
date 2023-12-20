@@ -146,7 +146,7 @@ Type:
 ```hcl
 map(object({
     name  = string,
-    scope = list(string)
+    scope = set(string)
   }))
 ```
 
