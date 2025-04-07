@@ -17,7 +17,7 @@ This module will create commercetools client credentials and save them in SSM st
 | Name | Version |
 |------|---------|
 | <a name="provider_aws"></a> [aws](#provider\_aws) | >= 5.31 |
-| <a name="provider_commercetools"></a> [commercetools](#provider\_commercetools) | >= 1.13.0 |
+| <a name="provider_commercetools"></a> [commercetools](#provider\_commercetools) | >= 1.18.0 |
 
 <!-- TFDOCS_PROVIDER_END -->
 
@@ -28,7 +28,7 @@ This module will create commercetools client credentials and save them in SSM st
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.1 |
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 5.31 |
-| <a name="requirement_commercetools"></a> [commercetools](#requirement\_commercetools) | >= 1.13.0 |
+| <a name="requirement_commercetools"></a> [commercetools](#requirement\_commercetools) | >= 1.18.0 |
 
 <!-- TFDOCS_REQUIREMENTS_END -->
 
@@ -145,8 +145,10 @@ Type:
 
 ```hcl
 map(object({
-    name  = string,
-    scope = set(string)
+    name                        = string,
+    scope                       = set(string)
+    accessTokenValiditySeconds  = optional(number, 0) # default is 2 days
+    refreshTokenValiditySeconds = optional(number, 0) # default is 200 days
   }))
 ```
 

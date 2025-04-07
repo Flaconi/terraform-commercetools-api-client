@@ -2,7 +2,7 @@ terraform {
   required_providers {
     commercetools = {
       source  = "labd/commercetools"
-      version = ">= 1.13.0"
+      version = ">= 1.18.0"
     }
     aws = {
       source  = "hashicorp/aws"

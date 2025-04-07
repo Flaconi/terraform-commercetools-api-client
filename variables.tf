@@ -72,8 +72,10 @@ variable "token_url_ssm_path" {
 
 variable "api_clients" {
   type = map(object({
-    name  = string,
-    scope = set(string)
+    name                        = string,
+    scope                       = set(string)
+    accessTokenValiditySeconds  = optional(number, 0) # default is 2 days
+    refreshTokenValiditySeconds = optional(number, 0) # default is 200 days
   }))
   default     = {}
   description = "Map of API clients"
